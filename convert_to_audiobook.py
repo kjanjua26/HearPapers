@@ -20,7 +20,7 @@ paper = args.paper
 download_path = args.path
 
 class AudioBook:
-    def convert_to_text(pdf_path):
+    def convert_to_text(self, pdf_path):
         """
         Converts the PDF to text for reading.
         Function taken from: 
@@ -55,7 +55,7 @@ class AudioBook:
         """
         paper_body = []
         
-        text_of_the_paper = convert_pdf_to_txt(pdf)
+        text_of_the_paper = self.convert_to_text(paper)
         pre_abs, post_abs = text_of_the_paper.split('Abstract')
         pre_refs, post_refs = post_abs.split('References')
         # only use post-abstract and pre-references text.
@@ -68,5 +68,8 @@ class AudioBook:
         body = ' '.join([x for x in paper_body])
         body = body.replace('- ', '')
         speech = gTTS(text = body, lang = "en", slow = False)
-        speech.save(download_path + "/paper.mp3")
+        speech.save(download_path + "/paper_audio.mp3")
         print("Audiobook saved to {}".format(download_path))
+
+to_audio = AudioBook()
+to_audio.to_audiobook()
