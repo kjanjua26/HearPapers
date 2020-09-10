@@ -21,4 +21,4 @@ The PDF link of the paper: <a href="https://arxiv.org/abs/1511.02274">PDF PAPER<
 The converted audiobook: <a href="https://soundcloud.com/kamran-janjua-588816855/yang-stacked-attention-networks-audiobook">LISTEN HERE</a>.
 
 ## Notes
-I used GTTs and therefore the voice is a bit robotic, I plan on using WaveNet in the future and also (smart) inclusion of sentences from the pdf in the audiobook. Currently the only heuristic is if the character length of a sentence is more than 20, we include in the audiobook. The CVPR paper results are good. Equations are a bit tricky, will need to figure that out in the future.
+I used gTTS and therefore the voice is a bit robotic, I plan on using WaveNet in the future and also (smart) inclusion of sentences from the pdf in the audiobook. Currently the only heuristic is if the character length of a sentence is more than 20, we include in the audiobook. The CVPR paper results are good. Equations are a bit tricky, will need to figure that out in the future.
