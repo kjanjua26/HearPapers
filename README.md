@@ -1,5 +1,4 @@
-# HearPapers
-HearPapers allows you to listen to PDFs (by converting them to audiobooks, of sorts). You can pass in the PDF and it will allow return a .mp3 file which you can listen to.
+# HearPapers - Listen to Papers
 
 The code `convert_to_audiobook.py` allows you to pass in the pdf file path and the path to store the audiobook to and it will save a .mp3 file to the path specified.
 
